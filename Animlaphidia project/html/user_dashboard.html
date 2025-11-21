@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Animalphidia - User Profile</title>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#169c59",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#112119",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e8f3ed] dark:border-b-primary/20 px-4 sm:px-10 py-3">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-4 text-[#0e1b14] dark:text-white">
+<div class="size-4">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-[#0e1b14] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Animalphidia</h2>
+</div>
+<div class="hidden md:flex items-center gap-9">
+<a class="text-[#0e1b14] dark:text-white text-sm font-medium leading-normal" href="#">Encyclopedia</a>
+<a class="text-[#0e1b14] dark:text-white text-sm font-medium leading-normal" href="#">Profile</a>
+</div>
+</div>
+<div class="flex flex-1 justify-end gap-4 sm:gap-8">
+<label class="flex flex-col min-w-40 !h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-[#509573] dark:text-primary flex border-none bg-[#e8f3ed] dark:bg-primary/20 items-center justify-center pl-4 rounded-l-lg border-r-0">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#0e1b14] dark:text-white focus:outline-0 focus:ring-0 border-none bg-[#e8f3ed] dark:bg-primary/20 focus:border-none h-full placeholder:text-[#509573] dark:placeholder:text-primary/70 px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal" placeholder="Search" value=""/>
+</div>
+</label>
+
+</header>
+<div class="p-4">
+<div class="flex w-full flex-col gap-4 sm:flex-row sm:justify-between sm:items-center">
+<div class="flex gap-4 items-center">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-24 w-24 sm:min-h-32 sm:w-32" data-alt="User avatar placeholder" style='background-image: url(images/jboy.png);'></div>
+<div class="flex flex-col justify-center">
+<p class="text-[#0e1b14] dark:text-white text-xl sm:text-[22px] font-bold leading-tight tracking-[-0.015em]">J Boy</p>
+<p class="text-[#509573] dark:text-primary/80 text-sm sm:text-base font-normal leading-normal">Wildlove Enthusiast | Advocate for Conservation </p>
+</div>
+</div>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#e8f3ed] dark:bg-primary/20 text-[#0e1b14] dark:text-white text-sm font-bold leading-normal tracking-[0.015em] w-full sm:w-auto">
+<span class="truncate">Edit Profile</span>
+</button>
+</div>
+</div>
+<div class="pb-3">
+<div class="flex border-b border-[#d1e6db] dark:border-primary/20 px-4 gap-8">
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-primary text-[#0e1b14] dark:text-white pb-[13px] pt-4" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">My Contributions</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#509573] dark:text-primary/70 pb-[13px] pt-4" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">Favorite Animals</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#509573] dark:text-primary/70 pb-[13px] pt-4" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">Account Settings</p>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-4 p-4">
+<div class="flex flex-col gap-3 pb-3">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="Philippine Eagle" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCdQK2zEgTNSFdZ5RS09cQDL-CB_KqzsueudBuq5b8aAm79m2l3JsxcT2k77xwfafdfItx51vosf2xNd2naUiHM6Aqo20z-I9RAXb0ztWD4r7i1wNlQhSk3qZNbafnNzhHW-VNzbHsokZV0CjoGPrh6tV9kkiGfkTzAafU8oBOSLD2WHk4rIRH7mvP1f8y0IaHh_b4ODCj7sBNxFEIPf-hpRgZFTGXSUS1FTYu3cZ5Oq1Y3LD9vFunVKc8kf_hSc0BKd28jw84UdvKt");'></div>
+<div>
+<p class="text-[#0e1b14] dark:text-white text-base font-medium leading-normal">Philippine Eagle</p>
+<p class="text-[#509573] dark:text-primary/80 text-sm font-normal leading-normal">Submitted on: 2023-04-12</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="Tarsier" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBteaOUkRrVfXsa9TbQMwaJly_T0cobuHek0KHJWBtzvu6FJcwf6IryiqGMeC1tfTALf1bNS7oeZ3TBl0iAVpRpNbC857eSCde7GebDWqLcnKRxg9lBynLJagX0Iqy9Pt-W_zTU4gzi2FyC0qLCRd4EEKztX8NDjz929_VRMFtjGkWhZ4Dox_X6awwwbQAolbNjYkk8DtkShpW_7qVqdBaMPe0fIAIm3Hv_vuT5QbV3HT6HG8kotDy-lr32M2Qi9HrqzXcsuZJYNAu9");'></div>
+<div>
+<p class="text-[#0e1b14] dark:text-white text-base font-medium leading-normal">Tarsier</p>
+<p class="text-[#509573] dark:text-primary/80 text-sm font-normal leading-normal">Submitted on: 2023-03-28</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="Tamaraw" style='background-image: url(images/tamaraw.jpg);'></div>
+<div>
+<p class="text-[#0e1b14] dark:text-white text-base font-medium leading-normal">Tamaraw</p>
+<p class="text-[#509573] dark:text-primary/80 text-sm font-normal leading-normal">Submitted on: 2023-03-15</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="Palawan Peacock-Pheasant" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCLtZZsXa_4HNH7WCuP6yR9QR2HaQ7UfsyF57BmsyqypIqYf_fVqZS3Lq1MIAeVConGs2QvEIFfVgRTyE3FcZ0e-6wuXMQtWtZLsUMkh9BswU5YSYpYAOXRsiMjJfWLyflRBrCSIMA_vnxj7lOlJYVZrISXzGmYCUpT8vWlCH23OPovyN6z8MJkalBvfx2inhZrB3N-WxFnpV_JqbPOB9XCQKIEyYUvbktvFjnM0XDBZRfFXILNGFKoW_WNNfUPchnguPqFYU8Mf0fC");'></div>
+<div>
+<p class="text-[#0e1b14] dark:text-white text-base font-medium leading-normal">Palawan Peacock-Pheasant</p>
+<p class="text-[#509573] dark:text-primary/80 text-sm font-normal leading-normal">Submitted on: 2023-02-20</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="Philippine Cockatoo" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD6hlIRVk3vFgoIeBZ1Lvx3Ux7aCRsXT5GEPA88j8YQ_YfVeym1ATE2cDXGR2VAQA7eh4-NV_R2FyxLe5QgEz5Dhh9uivorvvLOBZLpAi5Qb3CAmWDVgo5z5-h-E8rSp6K0_ftONOMDJjfEL9Arlfls2XmUvnV_RL2B7GNhSSgeSNTrDEjTrrFzCAU_eCGy0eSvHT0KNgwgXvwT2QazLOibHP5_UCrBRDCr87AEFh0_dsJCCm4se0G0ghjKUL57m3Yno2MI4edUvWto");'></div>
+<div>
+<p class="text-[#0e1b14] dark:text-white text-base font-medium leading-normal">Philippine Cockatoo</p>
+<p class="text-[#509573] dark:text-primary/80 text-sm font-normal leading-normal">Submitted on: 2023-02-05</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg" data-alt="Cebu Flowerpecker" style='background-image: url(cebuFlowerpeacker.jpg);'></div>
+<div>
+<p class="text-[#0e1b14] dark:text-white text-base font-medium leading-normal">Cebu Flowerpecker</p>
+<p class="text-[#509573] dark:text-primary/80 text-sm font-normal leading-normal">Submitted on: 2023-01-18</p>
+</div>
+</div>
+</div>
+<div class="flex px-4 py-3 justify-center">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">View All Contributions</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body></html>

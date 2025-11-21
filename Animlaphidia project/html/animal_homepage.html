@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Animalphidia Philippines</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2E8B57",
+                        "primary-dark": "#1E6B4E",
+                        "accent-blue": "#0038A8",
+                        "accent-red": "#CE1126",
+                        "accent-yellow": "#FCD116",
+                        "status-endangered": "#CE1126",
+                        "status-vulnerable": "#FFA500",
+                        "status-safe": "#2E8B57",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#112119",
+                        "text-light": "#0e1b14",
+                        "text-dark": "#f6f8f7",
+                        "text-muted-light": "#509573",
+                        "text-muted-dark": "#a0c2b2",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="flex flex-1 justify-center">
+<div class="layout-content-container flex flex-col max-w-7xl flex-1">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/20 px-4 sm:px-6 lg:px-8 py-4">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-2 text-primary dark:text-white">
+<span class="material-symbols-outlined text-3xl">pets</span>
+<h2 class="text-xl font-bold leading-tight tracking-[-0.015em]">Animalphidia Philippines</h2>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary-dark" href="#">Home</a>
+<a class="text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary-dark" href="#">Animals</a>
+<a class="text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary-dark" href="#">Conservation</a>
+<a class="text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary-dark" href="#">About Us</a>
+</nav>
+</div>
+<div class="flex flex-1 justify-end items-center gap-4">
+<div class="flex items-center gap-2">
+<button class="text-sm font-medium">EN</button>
+<span>/</span>
+<button class="text-sm font-medium text-text-muted-light dark:text-text-muted-dark">FIL</button>
+</div>
+
+</div>
+</header>
+<main class="flex-grow">
+<div class="px-4 sm:px-6 lg:px-8 py-10">
+<div class="flex min-h-[400px] flex-col gap-6 bg-cover bg-center bg-no-repeat rounded-xl items-center justify-center p-4 text-center" data-alt="Lush green jungle in the Philippines" style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAiD_BoC9yCtgxyoSBfx5m2LM2ePhi85_waHritKIVmZQF9Lq4F2ZfEqfzI2YaZh-P4kBbJuyEQ_XmwPoAAGB0q251ehd5X5DwCKQ96R6gGM10ga8f7gDKec5ZPw_jVa4J03UCQzNOgGOOQ5a2bTu9mtgVj_zw_h1Kh8Fw_usiqrHdeUejbdMu0jYXelaB-vCa-UPQYXnN2dTtA33TLiOhl7YbWyO06GoW01cGEL4Jv-hHe9vLtBCSBqh-qqGM2TnnD2etfpesAwsqd");'>
+<div class="flex flex-col gap-4 max-w-2xl">
+<h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] sm:text-5xl">Discover the Wildlife of the Philippines</h1>
+<h2 class="text-white text-base font-normal leading-normal sm:text-lg">Explore our comprehensive encyclopedia of native animals and learn about conservation efforts to protect them.</h2>
+</div>
+<label class="flex flex-col min-w-40 h-14 w-full max-w-xl">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-text-muted-light dark:text-text-muted-dark flex border border-primary/30 bg-background-light dark:bg-background-dark items-center justify-center pl-4 rounded-l-lg border-r-0">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-none text-text-light dark:text-text-dark focus:outline-0 focus:ring-0 border-y border-primary/30 bg-background-light dark:bg-background-dark focus:border-primary h-full placeholder:text-text-muted-light placeholder:dark:text-text-muted-dark px-4 text-base font-normal leading-normal" placeholder="Search for an animal..." value=""/>
+<div class="flex items-center justify-center rounded-r-lg border-l-0 border border-primary/30 bg-background-light dark:bg-background-dark pr-2">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary-dark">
+<span class="truncate">Search</span>
+</button>
+</div>
+</div>
+</label>
+<div class="flex gap-3 p-3 flex-wrap justify-center">
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-background-light/80 dark:bg-background-dark/80 px-4 text-text-light dark:text-text-dark hover:bg-primary hover:text-white">
+<p class="text-sm font-medium leading-normal">All</p>
+</button>
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-status-endangered/80 px-4 text-white">
+<p class="text-sm font-medium leading-normal">Endangered</p>
+</button>
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-status-vulnerable/80 px-4 text-white">
+<p class="text-sm font-medium leading-normal">Vulnerable</p>
+</button>
+<button class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-status-safe/80 px-4 text-white">
+<p class="text-sm font-medium leading-normal">Safe</p>
+</button>
+</div>
+</div>
+</div>
+<div class="px-4 sm:px-6 lg:px-8 py-8">
+<h2 class="text-2xl font-bold leading-tight tracking-[-0.015em] px-4 pb-4">Featured Animals</h2>
+<div class="flex overflow-x-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+<div class="flex items-stretch p-4 gap-4">
+<div class="flex h-full w-64 flex-col gap-4 rounded-xl bg-background-light dark:bg-background-dark shadow-lg">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-t-xl flex flex-col" data-alt="Philippine Eagle perched on a branch" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCTbk7e40rnFAZIp9pYXuOEWNXZrsQ_irJ3Ivq73SRMiRJeysaLmObVsbhgWZTpSWfTF24SMD24hnWynTaTuxuWeDUkHd0W3VWjm0bRjEQH1zqGKLmjdBhNmWaG9AKl_tqAz7qBBRGO2ha_m9kE_-UnIP0kKjmtyyK0yAItc-V7CrtZXN1Oqd_TZssudHvSOFeN9nn0_zB6S8LHgWt_Xw8w61mw34sl8dJrJVNRF8qQfn95cF85wUtKFSTnTf1-IR04B9B9fkrL9nCJ");'></div>
+<div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+<div>
+<p class="text-lg font-bold">Philippine Eagle</p>
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm">Pithecophaga jefferyi</p>
+</div>
+<button class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/20 dark:bg-primary/30 text-primary-dark dark:text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/30 dark:hover:bg-primary/40">
+<span class="truncate">Learn More</span>
+</button>
+</div>
+</div>
+<div class="flex h-full w-64 flex-col gap-4 rounded-xl bg-background-light dark:bg-background-dark shadow-lg">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-t-xl flex flex-col" data-alt="Tarsier clinging to a tree" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA1vvFAErASn_uISOCtlzjU0D43O_UthcJD_UuyuuaeLWkU2kABiiAq3n9680JfQ5nFp6c6Yg9WC_wfdL8IUUHeSnsnXvfhMACTrvs4OTifg4HU155U8H7pufMww79_zGW622EW4ErPt-tBy8GMKE6SVFugfrAUMTLqmQb__QmqxJfvwMkDag7m7rtrA1htmNoNX0ZXILZf5xX_bOFjY7jRbd2KyJvlcv-CFWrlopADIJt5tlTR626yZoscggn7ZfFf1WmiyG2lvwfx");'></div>
+<div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+<div>
+<p class="text-lg font-bold">Tarsier</p>
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm">Carlito syrichta</p>
+</div>
+<button class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/20 dark:bg-primary/30 text-primary-dark dark:text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/30 dark:hover:bg-primary/40">
+<span class="truncate">Learn More</span>
+</button>
+</div>
+</div>
+<div class="flex h-full w-64 flex-col gap-4 rounded-xl bg-background-light dark:bg-background-dark shadow-lg">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-t-xl flex flex-col" data-alt="Pawikan (Sea Turtle) swimming in the ocean" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA6CpuiPRFC0DpZhqEpX9p9LIPQkOWmRHqGU8WEkaUhAjNN8KtvbIFuFVsS_eV7TmOuWK0iApFALWI0FfpZjLngLlRVY5XgryyHs0vMzowgS3i42Cqt3cTOyh3N-Cov4ZpvFPVfn0q7EhKYuXjc1yu5c1p_vJp2rrkbpYKrph-l-7SLqstuLkRrVMWxDp1AhANm6OKIebw3kWFdkHiKHCBGAz-hEORD5jfapSshrZpx6ASAI0IP0yHUVCFTFr4vH8_w-txBM6ifaLX5");'></div>
+<div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+<div>
+<p class="text-lg font-bold">Pawikan</p>
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm">Chelonia mydas</p>
+</div>
+<button class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/20 dark:bg-primary/30 text-primary-dark dark:text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/30 dark:hover:bg-primary/40">
+<span class="truncate">Learn More</span>
+</button>
+</div>
+</div>
+<div class="flex h-full w-64 flex-col gap-4 rounded-xl bg-background-light dark:bg-background-dark shadow-lg">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-t-xl flex flex-col" data-alt="Tamaraw in its natural habitat" style='background-image: url(tamaraw.jpg);'></div>
+<div class="flex flex-col flex-1 justify-between p-4 pt-0 gap-4">
+<div>
+<p class="text-lg font-bold">Tamaraw</p>
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm">Bubalus mindorensis</p>
+</div>
+<button class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/20 dark:bg-primary/30 text-primary-dark dark:text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/30 dark:hover:bg-primary/40">
+<span class="truncate">Learn More</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="px-4 sm:px-6 lg:px-8 py-8">
+<h2 class="text-2xl font-bold leading-tight tracking-[-0.015em] px-4 pb-4">Browse by Category</h2>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 px-4">
+<a class="flex flex-col items-center justify-center gap-3 p-6 rounded-xl bg-background-light dark:bg-background-dark shadow-md hover:shadow-lg transition-shadow duration-300" href="#">
+
+<p class="font-bold text-lg">Mammals</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-3 p-6 rounded-xl bg-background-light dark:bg-background-dark shadow-md hover:shadow-lg transition-shadow duration-300" href="#">
+
+<p class="font-bold text-lg">Birds</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-3 p-6 rounded-xl bg-background-light dark:bg-background-dark shadow-md hover:shadow-lg transition-shadow duration-300" href="#">
+
+<p class="font-bold text-lg">Reptiles</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-3 p-6 rounded-xl bg-background-light dark:bg-background-dark shadow-md hover:shadow-lg transition-shadow duration-300" href="#">
+
+<p class="font-bold text-lg">Fish</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-3 p-6 rounded-xl bg-background-light dark:bg-background-dark shadow-md hover:shadow-lg transition-shadow duration-300 col-span-2 md:col-span-1 lg:col-span-1" href="#">
+
+<p class="font-bold text-lg">Amphibians</p>
+</a>
+</div>
+</div>
+<div class="px-4 sm:px-6 lg:px-8 py-8">
+<div class="bg-primary/10 dark:bg-primary/20 rounded-xl p-8 flex flex-col md:flex-row items-center gap-8">
+<div class="flex-1">
+<h2 class="text-3xl font-bold leading-tight tracking-[-0.015em] mb-4">Conservation Spotlight</h2>
+<p class="mb-6 text-text-light dark:text-text-dark">The Philippines is a diverse country,but its wildlife faces numeroushreats. Learn about the ongoing conservation efforts and how you can contribute to protecting our precious natural heritage.</p>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary-dark">
+<span class="truncate">Learn How to Help</span>
+</button>
+</div>
+<div class="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
+<div class="bg-status-endangered/20 p-4 rounded-lg flex items-start gap-3">
+<span class="material-symbols-outlined text-status-endangered text-3xl">warning</span>
+<div>
+<h3 class="font-bold text-status-endangered">Endangered</h3>
+<p class="text-sm">Species facing a very high risk of extinction in the wild.</p>
+</div>
+</div>
+<div class="bg-status-vulnerable/20 p-4 rounded-lg flex items-start gap-3">
+<span class="material-symbols-outlined text-status-vulnerable text-3xl">emergency</span>
+<div>
+<h3 class="font-bold text-status-vulnerable">Vulnerable</h3>
+<p class="text-sm">Species facing a high risk of extinction in the wild.</p>
+</div>
+</div>
+<div class="bg-status-safe/20 p-4 rounded-lg flex items-start gap-3 sm:col-span-2">
+<span class="material-symbols-outlined text-status-safe text-3xl">verified</span>
+<div>
+<h3 class="font-bold text-status-safe">Least Concern</h3>
+<p class="text-sm">Species that are widespread and abundant.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-background-light dark:bg-background-dark border-t border-primary/20 mt-10">
+<div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div>
+<h3 class="font-bold text-lg mb-2">Animalphidia Philippines</h3>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">Your guide to the incredible biodiversity of the Philippine archipelago.</p>
+</div>
+<div>
+<h3 class="font-bold text-lg mb-2">Quick Links</h3>
+<ul class="space-y-1">
+<li><a class="text-sm hover:text-primary" href="#">About Us</a></li>
+<li><a class="text-sm hover:text-primary" href="#">Contact</a></li>
+<li><a class="text-sm hover:text-primary" href="#">Terms of Service</a></li>
+<li><a class="text-sm hover:text-primary" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h3 class="font-bold text-lg mb-2">Follow Us</h3>
+<div class="flex space-x-4">
+<a class="text-text-muted-light dark:text-text-muted-dark hover:text-primary" href="#"><svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path></svg></a>
+<a class="text-text-muted-light dark:text-text-muted-dark hover:text-primary" href="#"><svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg></a>
+<a class="text-text-muted-light dark:text-text-muted-dark hover:text-primary" href="#"><svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.013-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.345 4.11c.636-.247 1.363-.416 2.427-.465C9.784 2.013 10.138 2 12.315 2zm-1.002 6.363a4.72 4.72 0 100 9.44 4.72 4.72 0 000-9.44zM12 15.5a3.5 3.5 0 110-7 3.5 3.5 0 010 7zm5.25-8.5a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0z" fill-rule="evenodd"></path></svg></a>
+</div>
+</div>
+</div>
+<div class="mt-8 border-t border-primary/20 pt-4 text-center text-sm text-text-muted-light dark:text-text-muted-dark">
+<p>© 2024 Animalphidia Philippines. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</div>
+</div>
+</body></html>

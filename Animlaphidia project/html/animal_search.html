@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Animalphidia - Discover Philippine Wildlife</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2E7D32",
+                        "secondary": "#FFC107",
+                        "accent": "#D32F2F",
+                        "background-light": "#F5F5F5",
+                        "background-dark": "#212121",
+                        "text-light": "#212121",
+                        "text-dark": "#F5F5F5",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 sm:px-8 md:px-20 lg:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[1200px] flex-1">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 dark:border-gray-700 px-6 sm:px-10 py-3">
+<div class="flex items-center gap-4 text-primary">
+<div class="size-6">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold tracking-[-0.015em]">Animalphidia</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-sm font-medium leading-normal hover:text-primary" href="#">Home</a>
+<a class="text-sm font-medium leading-normal hover:text-primary" href="#">About</a>
+<a class="text-sm font-medium leading-normal hover:text-primary" href="#">Contact</a>
+</div>
+<div class="flex gap-2">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+<span class="truncate">Login</span>
+</button>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/20 text-primary text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/30 transition-colors">
+<span class="truncate">Sign Up</span>
+</button>
+</div>
+</div>
+<div class="md:hidden">
+<button class="p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="flex-1 p-4 sm:p-6 lg:p-8">
+<div class="flex flex-wrap justify-between gap-4 items-center mb-6">
+<p class="text-4xl font-black leading-tight tracking-[-0.033em] min-w-72">Discover Philippine Wildlife</p>
+</div>
+<div class="px-4 py-3 bg-white dark:bg-gray-800 rounded-xl shadow-sm mb-6">
+<label class="flex flex-col min-w-40 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-12">
+<div class="text-gray-500 dark:text-gray-400 flex items-center justify-center pl-4">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-light dark:text-text-dark focus:outline-0 focus:ring-0 border-none bg-transparent focus:border-none h-full placeholder:text-gray-500 dark:placeholder:text-gray-400 px-4 pl-2 text-base font-normal leading-normal" placeholder="Search for animals..." value=""/>
+</div>
+</label>
+</div>
+<div class="flex flex-col md:flex-row gap-4 mb-8">
+<div class="flex-1 flex gap-3 flex-wrap">
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-gray-800 shadow-sm pl-4 pr-2 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+<p class="text-sm font-medium leading-normal">Region</p>
+<span class="material-symbols-outlined text-gray-600 dark:text-gray-300">arrow_drop_down</span>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-gray-800 shadow-sm pl-4 pr-2 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+<p class="text-sm font-medium leading-normal">Conservation Status</p>
+<span class="material-symbols-outlined text-gray-600 dark:text-gray-300">arrow_drop_down</span>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-gray-800 shadow-sm pl-4 pr-2 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+<p class="text-sm font-medium leading-normal">Habitat Type</p>
+<span class="material-symbols-outlined text-gray-600 dark:text-gray-300">arrow_drop_down</span>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-gray-800 shadow-sm pl-4 pr-2 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+<p class="text-sm font-medium leading-normal">Animal Category</p>
+<span class="material-symbols-outlined text-gray-600 dark:text-gray-300">arrow_drop_down</span>
+</button>
+</div>
+<div class="flex items-center gap-2">
+<label class="text-sm font-medium" for="sort-by">Sort by:</label>
+<div class="relative">
+<select class="appearance-none rounded-lg bg-white dark:bg-gray-800 shadow-sm pl-3 pr-8 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary" id="sort-by">
+<option>Alphabetical</option>
+<option>Recently Added</option>
+<option>Conservation Priority</option>
+</select>
+<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700 dark:text-gray-300">
+<span class="material-symbols-outlined text-base">expand_more</span>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-[repeat(auto-fill,minmax(220px,1fr))] gap-6">
+<div class="flex flex-col gap-3 pb-3 bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden transition-all hover:shadow-xl hover:-translate-y-1">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover" data-alt="Tamaraw" style='background-image: url(tamaraw.jpg);'></div>
+<div class="p-4">
+<p class="text-lg font-bold leading-normal">Tamaraw</p>
+<span class="inline-block bg-accent text-white text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Critically Endangered</span>
+<p class="text-sm font-normal leading-normal mt-2 text-gray-600 dark:text-gray-300">A small, hoofed mammal belonging to the family Bovidae.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden transition-all hover:shadow-xl hover:-translate-y-1">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover" data-alt="Philippine Eagle" style='background-image: url(philipineagle.webp);'></div>
+<div class="p-4">
+<p class="text-lg font-bold leading-normal">Philippine Eagle</p>
+<span class="inline-block bg-accent text-white text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Critically Endangered</span>
+<p class="text-sm font-normal leading-normal mt-2 text-gray-600 dark:text-gray-300">One of the largest and most powerful birds of prey.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden transition-all hover:shadow-xl hover:-translate-y-1">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover" data-alt="Tarsier" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDrX3cezuJSeFfgmS5hzhy-ZY6hCt0NfnBP5ioTsPY_4btn7ycQUiPBJGSXE1uPUtg48s2tvZjjok7zcP9k8ucVs2_O2pMSI8aM_g2O4eV1Qbr5kkzrkQeqWs8gxKsl8E3HXc7yBAMFLO_NVk76HSoV1A3jGar-FwF7iEDxvB-RvQ86_uz46FVW9qFZ_hBNsnPPITGM7GQXLvcZJDWo5t918nIZ6nvDDSfSdHR3006tbhsUdAPD7IG_vFvHKx0f7860OHkehmL9GkiL");'></div>
+<div class="p-4">
+<p class="text-lg font-bold leading-normal">Tarsier</p>
+<span class="inline-block bg-yellow-500 text-white text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Near Threatened</span>
+<p class="text-sm font-normal leading-normal mt-2 text-gray-600 dark:text-gray-300">A small primate known for its large eyes.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden transition-all hover:shadow-xl hover:-translate-y-1">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover" data-alt="Whale Shark" style='background-image: url(whaleshark.jpg);'></div>
+<div class="p-4">
+<p class="text-lg font-bold leading-normal">Whale Shark</p>
+<span class="inline-block bg-orange-600 text-white text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Endangered</span>
+<p class="text-sm font-normal leading-normal mt-2 text-gray-600 dark:text-gray-300">The largest known extant fish species.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden transition-all hover:shadow-xl hover:-translate-y-1">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover" data-alt="Palawan Peacock-Pheasant" style='background-image: url(palawanpeacock.jpg);'></div>
+<div class="p-4">
+<p class="text-lg font-bold leading-normal">Palawan Peacock-Pheasant</p>
+<span class="inline-block bg-secondary text-gray-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Vulnerable</span>
+<p class="text-sm font-normal leading-normal mt-2 text-gray-600 dark:text-gray-300">A medium-sized bird in the pheasant family.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden transition-all hover:shadow-xl hover:-translate-y-1">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover" data-alt="Mindoro Bleeding-heart" style='background-image: url(images/mindotro.jpg);'></div>
+<div class="p-4">
+<p class="text-lg font-bold leading-normal">Mindoro Bleeding-heart</p>
+<span class="inline-block bg-accent text-white text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-full">Critically Endangered</span>
+<p class="text-sm font-normal leading-normal mt-2 text-gray-600 dark:text-gray-300">A species of ground dove.</p>
+</div>
+</div>
+</div>
+<div class="flex justify-center items-center mt-12 space-x-2">
+<button class="flex items-center justify-center px-4 h-10 text-base font-medium text-gray-500 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:hover:bg-gray-700 dark:hover:text-white transition-colors">
+                                Previous
+                            </button>
+<button class="flex items-center justify-center px-4 h-10 text-base font-medium text-gray-500 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:hover:bg-gray-700 dark:hover:text-white transition-colors">
+                                1
+                            </button>
+<button class="flex items-center justify-center px-4 h-10 text-base font-medium text-primary bg-primary/20 border border-primary rounded-lg hover:bg-primary/30 transition-colors">
+                                2
+                            </button>
+<button class="flex items-center justify-center px-4 h-10 text-base font-medium text-gray-500 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:hover:bg-gray-700 dark:hover:text-white transition-colors">
+                                3
+                            </button>
+<button class="flex items-center justify-center px-4 h-10 text-base font-medium text-gray-500 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 rounded-lg hover:bg-gray-100 hover:text-gray-700 dark:hover:bg-gray-700 dark:hover:text-white transition-colors">
+                                Next
+                            </button>
+</div>
+</main>
+</div>
+</div>
+</div>
+</div>
+</body></html>

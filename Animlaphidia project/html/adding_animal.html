@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Add New Animal - Animalphidia</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#169c59",
+            "background-light": "#f7f8f7",
+            "background-dark": "#112119",
+          },
+          fontFamily: {
+            "display": ["Public Sans", "sans-serif"]
+          },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e8f3ed] dark:border-b-primary/20 px-4 sm:px-10 py-3 sticky top-0 bg-background-light dark:bg-background-dark z-10">
+<div class="flex items-center gap-4 text-[#0e1b14] dark:text-white">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Animalphidia</h2>
+</div>
+<div class="hidden md:flex items-center gap-9">
+<a class="text-[#0e1b14] dark:text-white/80 text-sm font-medium leading-normal" href="#">Home</a>
+<a class="text-[#0e1b14] dark:text-white/80 text-sm font-medium leading-normal" href="#">Animals</a>
+<a class="text-[#0e1b14] dark:text-white/80 text-sm font-medium leading-normal" href="#">Contribute</a>
+<a class="text-[#0e1b14] dark:text-white/80 text-sm font-medium leading-normal" href="#">About</a>
+</div>
+<div class="flex items-center gap-2">
+
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="User avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA4fiPEcke43Xqnzsx6SszF-sQrZ_8eODkprRl6UEaG8NEACFzjddb_gLOclJJq3lt7uBiSE3Yr3v7v0Sln309BnzQU7M2PO6qXbj3wlVlibmu6qJwhZ7QwnwIu_-rfOUC19vRe0Zbu6GpFeWFyeM06J-6qg2FyBpI2QCUPBxccQeKzjK_R6BxVkD0nskztppPl2Rucumq9vKeVzEnrczpCTrgMHVFx02qYYToIL_4Yovc8GXfSdlrSgV-Mdh_OzMwDp-YfiSJw5e7B");'></div>
+</div>
+</header>
+<main class="flex-1 px-4 sm:px-10 py-5">
+<div class="layout-content-container flex flex-col max-w-4xl mx-auto flex-1">
+<div class="flex flex-wrap justify-between gap-3 p-4">
+<div class="flex min-w-72 flex-col gap-3">
+<p class="text-[#0e1b14] dark:text-white text-4xl font-black leading-tight tracking-[-0.033em]">Add a New Animal</p>
+<p class="text-[#509573] dark:text-white/60 text-base font-normal leading-normal">Contribute to our encyclopedia by adding information about a new species.</p>
+</div>
+</div>
+<div class="flex flex-col gap-3 p-4">
+<div class="flex gap-6 justify-between">
+<p class="text-[#0e1b14] dark:text-white text-base font-medium leading-normal">Step 1 of 4: Basic Information</p>
+<p class="text-[#0e1b14] dark:text-white/80 text-sm font-normal leading-normal">25%</p>
+</div>
+<div class="rounded bg-[#d1e6db] dark:bg-primary/30"><div class="h-2 rounded bg-primary" style="width: 25%;"></div></div>
+</div>
+<form class="space-y-8 p-4">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="flex flex-col gap-6">
+<label class="flex flex-col flex-1">
+<p class="text-[#0e1b14] dark:text-white text-base font-medium leading-normal pb-2">Common Name</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#0e1b14] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-[#d1e6db] dark:border-primary/30 bg-background-light dark:bg-background-dark h-14 placeholder:text-[#509573] dark:placeholder:text-white/40 p-[15px] text-base font-normal leading-normal" placeholder="e.g., Philippine Eagle" value=""/>
+</label>
+<label class="flex flex-col flex-1">
+<p class="text-[#0e1b14] dark:text-white text-base font-medium leading-normal pb-2">Scientific Name</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#0e1b14] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-[#d1e6db] dark:border-primary/30 bg-background-light dark:bg-background-dark h-14 placeholder:text-[#509573] dark:placeholder:text-white/40 p-[15px] text-base font-normal leading-normal" placeholder="e.g., Pithecophaga jefferyi" value=""/>
+</label>
+<label class="flex flex-col flex-1">
+<p class="text-[#0e1b14] dark:text-white text-base font-medium leading-normal pb-2">Category</p>
+<select class="form-select flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#0e1b14] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-[#d1e6db] dark:border-primary/30 bg-background-light dark:bg-background-dark h-14 p-[15px] text-base font-normal leading-normal">
+<option>Mammal</option>
+<option>Bird</option>
+<option>Reptile</option>
+<option>Amphibian</option>
+<option>Fish</option>
+<option>Insect</option>
+</select>
+</label>
+<label class="flex flex-col flex-1">
+<p class="text-[#0e1b14] dark:text-white text-base font-medium leading-normal pb-2">Conservation Status</p>
+<select class="form-select flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#0e1b14] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-[#d1e6db] dark:border-primary/30 bg-background-light dark:bg-background-dark h-14 p-[15px] text-base font-normal leading-normal">
+<option>Critically Endangered</option>
+<option>Endangered</option>
+<option>Vulnerable</option>
+<option>Near Threatened</option>
+<option>Least Concern</option>
+</select>
+</label>
+</div>
+<div class="flex flex-col gap-4">
+<p class="text-[#0e1b14] dark:text-white text-base font-medium leading-normal">Animal Image</p>
+<div class="flex items-center justify-center w-full">
+<label class="flex flex-col items-center justify-center w-full h-64 border-2 border-[#d1e6db] dark:border-primary/30 border-dashed rounded-lg cursor-pointer bg-background-light dark:bg-background-dark hover:bg-gray-100 dark:hover:bg-primary/10" for="dropzone-file">
+<div class="flex flex-col items-center justify-center pt-5 pb-6">
+<span class="material-symbols-outlined text-4xl text-[#509573] dark:text-white/60">cloud_upload</span>
+<p class="mb-2 text-sm text-[#509573] dark:text-white/60"><span class="font-semibold">Click to upload</span> or drag and drop</p>
+<p class="text-xs text-[#509573] dark:text-white/60">SVG, PNG, JPG or GIF (MAX. 800x400px)</p>
+</div>
+<input class="hidden" id="dropzone-file" type="file"/>
+</label>
+</div>
+<div class="w-full h-40 rounded-lg bg-cover bg-center bg-no-repeat" data-alt="Philippine Eagle preview" style='background-image: url(philipineagle.webp);'>
+</div>
+</div>
+</div>
+<div class="flex justify-end gap-4 mt-8">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-[#e8f3ed] dark:bg-primary/20 text-[#0e1b14] dark:text-white text-base font-bold leading-normal tracking-[0.015em]" type="button">
+<span class="truncate">Previous</span>
+</button>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em]" type="submit">
+<span class="truncate">Next</span>
+</button>
+</div>
+</form>
+</div>
+</main>
+</div>
+</div>
+</body></html>

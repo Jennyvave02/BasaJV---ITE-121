@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Animalphidia Admin Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#2E7D32",
+            "background-light": "#F5E6CA",
+            "background-dark": "#1a1a1a",
+            "accent": "#FFC107",
+            "text-light": "#333333",
+            "text-dark": "#f5f5f5",
+            "text-secondary-light": "#666666",
+            "text-secondary-dark": "#a3a3a3",
+          },
+          fontFamily: {
+            "display": ["Public Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+<div class="flex h-full grow flex-row">
+<aside class="flex flex-col w-64 bg-background-light dark:bg-background-dark border-r border-gray-200 dark:border-gray-700">
+<div class="flex h-full min-h-[700px] flex-col justify-between p-4">
+<div class="flex flex-col gap-4">
+<div class="flex gap-3 items-center">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="Admin avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBW2jbPTemd-_yhID5Ea8BVBl-edif-TzC-dUNPWQSW-eQKSIepg9y_8waU5-AyKijxPjVT5xIZTxhVekBg_24DXzVtnFq-IFZcAnTtP6MscIjka7JA-PkeC6OSg9HIlT7lAbn5U_Tn9cifg5FVjrlKPsY8j1vYmT68W4qEoG7lMYzSX0DPKa_u9-JK7I6fB8XHB8ngZynjRIPjpIhMLaPq1jRCXUlaU3j0qSaB4ZNt3uLPtP3in5Z09R4feV7QnHVCMUBsCXV67DI_");'></div>
+<div class="flex flex-col">
+<h1 class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Daddy Rodel💦</h1>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal leading-normal">Administrator</p>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary/20">
+<span class="material-symbols-outlined text-primary">dashboard</span>
+<p class="text-primary text-sm font-medium leading-normal">Dashboard</p>
+</div>
+<div class="flex items-center gap-3 px-3 py-2">
+<span class="material-symbols-outlined text-text-light dark:text-text-dark">pets</span>
+<p class="text-text-light dark:text-text-dark text-sm font-medium leading-normal">Animal Entries</p>
+</div>
+<div class="flex items-center gap-3 px-3 py-2">
+<span class="material-symbols-outlined text-text-light dark:text-text-dark">group</span>
+<p class="text-text-light dark:text-text-dark text-sm font-medium leading-normal">User Management</p>
+</div>
+<div class="flex items-center gap-3 px-3 py-2">
+<span class="material-symbols-outlined text-text-light dark:text-text-dark">rate_review</span>
+<p class="text-text-light dark:text-text-dark text-sm font-medium leading-normal">Content Moderation</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Logout</span>
+</button>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-3 px-3 py-2">
+<span class="material-symbols-outlined text-text-light dark:text-text-dark">settings</span>
+<p class="text-text-light dark:text-text-dark text-sm font-medium leading-normal">System Settings</p>
+</div>
+</div>
+</div>
+</div>
+</aside>
+<main class="flex-1 p-8 bg-white dark:bg-gray-900">
+<div class="flex flex-wrap justify-between gap-3 p-4">
+<div class="flex min-w-72 flex-col gap-3">
+<p class="text-primary text-4xl font-black leading-tight tracking-[-0.033em]">Welcome, Boss Rodel</p>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-base font-normal leading-normal">Here's a summary of the application's data.</p>
+</div>
+</div>
+<div class="flex flex-wrap gap-4 p-4">
+<div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-lg p-6 border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-background-dark">
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Total Animals</p>
+<p class="text-text-light dark:text-text-dark tracking-light text-2xl font-bold leading-tight">1,234</p>
+</div>
+<div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-lg p-6 border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-background-dark">
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Total Users</p>
+<p class="text-text-light dark:text-text-dark tracking-light text-2xl font-bold leading-tight">5,678</p>
+</div>
+<div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-lg p-6 border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-background-dark">
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Pending Submissions</p>
+<p class="text-text-light dark:text-text-dark tracking-light text-2xl font-bold leading-tight">12</p>
+</div>
+<div class="flex min-w-[158px] flex-1 flex-col gap-2 rounded-lg p-6 border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-background-dark">
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal">Reported Sightings</p>
+<p class="text-text-light dark:text-text-dark tracking-light text-2xl font-bold leading-tight">5</p>
+</div>
+</div>
+<h2 class="text-primary text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Recent Activities</h2>
+<div class="px-4 py-3 @container">
+<div class="flex overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700 bg-background-light dark:bg-background-dark">
+<table class="flex-1">
+<thead>
+<tr class="bg-background-light dark:bg-background-dark">
+<th class="px-4 py-3 text-left text-text-light dark:text-text-dark w-[400px] text-sm font-medium leading-normal">
+                    Animal Name
+                  </th>
+<th class="px-4 py-3 text-left text-text-light dark:text-text-dark w-[400px] text-sm font-medium leading-normal">
+                    Scientific Name
+                  </th>
+<th class="px-4 py-3 text-left text-text-light dark:text-text-dark w-60 text-sm font-medium leading-normal">
+                    Conservation Status
+                  </th>
+<th class="px-4 py-3 text-left text-primary w-60 text-sm font-medium leading-normal">
+                    Actions
+                  </th>
+</tr>
+</thead>
+<tbody>
+<tr class="border-t border-t-gray-200 dark:border-t-gray-700">
+<td class="h-[72px] px-4 py-2 w-[400px] text-text-light dark:text-text-dark text-sm font-normal leading-normal">
+                    Philippine Eagle
+                  </td>
+<td class="h-[72px] px-4 py-2 w-[400px] text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal leading-normal">
+                    Pithecophaga jefferyi
+                  </td>
+<td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-red-200 dark:bg-red-800 text-red-800 dark:text-red-200 text-sm font-medium leading-normal w-full">
+<span class="truncate">Critically Endangered</span>
+</button>
+</td>
+<td class="h-[72px] px-4 py-2 w-60 text-primary text-sm font-bold leading-normal tracking-[0.015em]">
+                    Edit
+                  </td>
+</tr>
+<tr class="border-t border-t-gray-200 dark:border-t-gray-700">
+<td class="h-[72px] px-4 py-2 w-[400px] text-text-light dark:text-text-dark text-sm font-normal leading-normal">Tarsier</td>
+<td class="h-[72px] px-4 py-2 w-[400px] text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal leading-normal">
+                    Carlito syrichta
+                  </td>
+<td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-yellow-200 dark:bg-yellow-800 text-yellow-800 dark:text-yellow-200 text-sm font-medium leading-normal w-full">
+<span class="truncate">Near Threatened</span>
+</button>
+</td>
+<td class="h-[72px] px-4 py-2 w-60 text-primary text-sm font-bold leading-normal tracking-[0.015em]">
+                    Edit
+                  </td>
+</tr>
+<tr class="border-t border-t-gray-200 dark:border-t-gray-700">
+<td class="h-[72px] px-4 py-2 w-[400px] text-text-light dark:text-text-dark text-sm font-normal leading-normal">Tamaraw</td>
+<td class="h-[72px] px-4 py-2 w-[400px] text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal leading-normal">
+                    Bubalus mindorensis
+                  </td>
+<td class="h-[72px] px-4 py-2 w-60 text-sm font-normal leading-normal">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-red-200 dark:bg-red-800 text-red-800 dark:text-red-200 text-sm font-medium leading-normal w-full">
+<span class="truncate">Critically Endangered</span>
+</button>
+</td>
+<td class="h-[72px] px-4 py-2 w-60 text-primary text-sm font-bold leading-normal tracking-[0.015em]">
+                    Edit
+                  </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</main>
+</div>
+</div>
+</body></html>

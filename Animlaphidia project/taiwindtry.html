@@ -1,0 +1,57 @@
+#include <sys/types.h>   // Contains definitions of data types used in system calls
+#include <stdio.h>       // Standard input/output functions
+#include <unistd.h>      // POSIX operating system API (fork, exec, etc.)
+
+int main()
+{
+    pid_t pid;           // WHAT IS pid_t? 
+                         // - pid_t is a data type specifically for Process IDs
+                         // - It's like an integer but guaranteed to hold process IDs
+                         // - Used to store the return value from fork() system call
+
+    /* fork a child process */
+    pid = fork();        // WHAT IS fork() AND WHAT IS IT USED FOR?
+                         // - fork() creates an exact duplicate of the current process
+                         // - USES: 
+                         //   * Parallel processing - running multiple tasks simultaneously
+                         //   * Creating child processes to handle specific jobs
+                         //   * Server applications that handle multiple clients
+                         //   * Background process creation
+                         // - After fork(), TWO identical processes run concurrently
+                         // - Return values:
+                         //   * In PARENT: returns the child's Process ID (PID)
+                         //   * In CHILD: returns 0
+                         //   * On error: returns -1
+
+    if (pid < 0) {       /* error occurred */
+        fprintf(stderr, "Fork Failed");  // Print error message to standard error
+        return 1;        // Exit with error code
+    }
+    else if (pid == 0)   /* child process */
+    { 
+        execlp("/bin/ls","ls",NULL);     // WHAT IS execlp()?
+                         // - Replaces the current process with a new program
+                         // - USES:
+                         //   * Running external commands/programs
+                         //   * Transforming a process into another application
+                         //   * Executing system commands from within a program
+                         // - Parameters:
+                         //   * "/bin/ls" - path to the executable
+                         //   * "ls" - program name (first argument)
+                         //   * NULL - marks end of argument list
+    }
+    else                /* parent process */
+    { 
+        /* parent will wait for the child to complete */
+        wait(NULL);      // WHAT IS wait()?
+                         // - Makes parent process pause until child finishes
+                         // - USES:
+                         //   * Synchronization between parent and child processes
+                         //   * Preventing "zombie processes" (completed but not reaped)
+                         //   * Ensuring proper process cleanup
+                         // - NULL means we don't care about the child's exit status
+        
+        printf("Child Complete");  // Notify that child process has finished
+    }
+    return 0;            // Successful program termination
+}
